@@ -12,7 +12,22 @@
 This is a guide to the statistically best way to play the game of Yahtzee. This is not a rule book or an istruction manual, so it will asume that you already know the rules of the game. I will try to focus on those aspects of optimal play that are not obvious.  I will try to ensure that any advice of strategy I give is the statistical best, and I will calculate all probablilities using computer simulations. This is because mathemetically calculating probablilities for the game of Yahtzee is not trivial, and I am no expert on game theory. Additionaly, simulating turns of Yahtzee and random rolls gives a satisfactory degree of precision. The same holds true for strategies that are not obvious. I will test and compare different strategies using simulations. The source code for all simulations used can be found here: https://github.com/PhineasGreene/yahtzee-guide.
 
 \section{Combinations}
+\paragraph{}
+The first step to playing optimal Yahtzee is to understand the different combinations you can roll and the value and risk ascociated with each one. The following sections will describe the probability of rolling each pattern and the points that you stand to gain by succseeding in your roll. These values are combined into a "desirability" score (risk/reward). This will help later on when you need to make important decisions on what to roll for and what to zero out. We will first look at upper section patterns, and then at lower section patterns.
 \subsection{Upper Section}
+\paragraph{}
+All off the upper section patterns are essantially the same from a probability standpoint. For this reason the tables below show the probablilities of rolling 3, 4, or 5 of any available number in the upper section. 
+
+\begin{figure}
+\begin{table}
+  \begin{tabular}{l|l|l|l|l|l|l}
+   a & \textbf{Paterns Available}\\
+   a & 1 & 2 & 3 & 4 & 5 & 6
+   Number Needed &
+  \end{tabular}
+\end{table}
+\end{figure}
+
 \subsection{Lower Section}
 
 \section{Picking What To Go For}
